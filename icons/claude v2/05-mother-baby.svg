@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true">
+<!-- Two cupped hands forming a heart-shaped supportive bowl (lower portion) -->
+<path d="M6 46
+         Q2 58 14 60
+         Q24 62 32 60
+         Q40 62 50 60
+         Q62 58 58 46
+         Q56 50 50 50
+         Q44 50 38 48
+         L32 46
+         L26 48
+         Q20 50 14 50
+         Q8 50 6 46 Z"/>
+<!-- Thumb hints on outside of each hand -->
+<ellipse cx="10" cy="42" rx="2.5" ry="3"/>
+<ellipse cx="54" cy="42" rx="2.5" ry="3"/>
+<!-- Mother + baby silhouette (now larger, centered, clearly visible) -->
+<!-- Mother head -->
+<circle cx="30" cy="14" r="6"/>
+<!-- Mother body and cradling arms (clear large silhouette) -->
+<path d="M22 22
+         Q22 20 30 20
+         Q38 20 38 22
+         L40 30
+         Q44 32 42 38
+         L40 44
+         L34 44
+         L34 40
+         Q32 38 30 38
+         Q28 38 26 40
+         L26 44
+         L20 44
+         L20 38
+         Q18 32 22 30 Z"/>
+<!-- Baby (clearly held in mother's arm) -->
+<circle cx="38" cy="30" r="3"/>
+<ellipse cx="37" cy="36" rx="3.5" ry="2"/>
+</svg>

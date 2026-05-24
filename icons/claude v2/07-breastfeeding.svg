@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true">
+<!-- Heart silhouette (filled) -->
+<path d="M32 56
+         C32 56 6 40 6 22
+         C6 14 14 8 22 12
+         C26 14 30 18 32 22
+         C34 18 38 14 42 12
+         C50 8 58 14 58 22
+         C58 40 32 56 32 56 Z"/>
+<!-- Water-drop hollow in middle (white) -->
+<path d="M32 18
+         C32 18 24 30 24 38
+         C24 44 28 48 32 48
+         C36 48 40 44 40 38
+         C40 30 32 18 32 18 Z" fill="white"/>
+<!-- Inner small accent drop -->
+<circle cx="32" cy="38" r="2.5"/>
+</svg>

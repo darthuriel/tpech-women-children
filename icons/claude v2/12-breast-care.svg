@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true">
+<!-- Outer ribbon contour: top loop + two crossing tails  -->
+<path d="M32 6
+         C24 6 20 14 22 22
+         L26 30
+         L24 38
+         L22 58
+         Q22 60 24 60
+         L32 48
+         L40 60
+         Q42 60 42 58
+         L40 38
+         L38 30
+         L42 22
+         C44 14 40 6 32 6 Z"/>
+<!-- Inner loop opening at top (white hole, gives the loop look) -->
+<path d="M32 11
+         C28 11 25 15 26 21
+         L38 21
+         C39 15 36 11 32 11 Z" fill="white"/>
+<!-- Subtle crossing detail (tail overlap mark) -->
+<path d="M27 32 L37 36" stroke="white" stroke-width="1.2" opacity="0.7" stroke-linecap="round"/>
+</svg>

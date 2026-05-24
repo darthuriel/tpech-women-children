@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true">
+<!-- Head with side-swept hair -->
+<circle cx="32" cy="12" r="5.5"/>
+<!-- Hair fringe sweeping over forehead -->
+<path d="M26 9 Q30 5 38 9 L36 13 L28 13 Z"/>
+<!-- Slim shoulders + torso -->
+<path d="M24 20
+         Q24 18 32 18
+         Q40 18 40 20
+         L42 24
+         L40 38
+         L24 38
+         L22 24 Z"/>
+<!-- Arms — one slightly bent (casual pose) -->
+<path d="M22 23
+         L18 36
+         L20 38
+         L24 26 Z"/>
+<path d="M42 23
+         L46 30
+         L48 30
+         L48 34
+         L44 32
+         L40 26 Z"/>
+<!-- Waist + lower torso (slim) -->
+<path d="M25 38 L39 38 L38 46 L26 46 Z"/>
+<!-- Long legs (jeans, slim cut) -->
+<rect x="26" y="46" width="5" height="16" rx="1.5"/>
+<rect x="33" y="46" width="5" height="16" rx="1.5"/>
+<!-- Sneakers -->
+<rect x="24" y="60" width="8" height="3" rx="1.5"/>
+<rect x="32" y="60" width="8" height="3" rx="1.5"/>
+<!-- Backpack strap hint -->
+<path d="M28 20 L26 26" stroke="white" stroke-width="0.8" fill="none"/>
+<path d="M36 20 L38 26" stroke="white" stroke-width="0.8" fill="none"/>
+</svg>

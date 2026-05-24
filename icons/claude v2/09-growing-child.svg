@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true">
+<!-- Height ruler on right side -->
+<rect x="50" y="4" width="4" height="58" rx="1.5"/>
+<!-- Tick marks (major + minor) -->
+<line x1="46" y1="10" x2="50" y2="10" stroke="currentColor" stroke-width="1.6"/>
+<line x1="48" y1="16" x2="50" y2="16" stroke="currentColor" stroke-width="1.2"/>
+<line x1="46" y1="22" x2="50" y2="22" stroke="currentColor" stroke-width="1.6"/>
+<line x1="48" y1="28" x2="50" y2="28" stroke="currentColor" stroke-width="1.2"/>
+<line x1="46" y1="34" x2="50" y2="34" stroke="currentColor" stroke-width="1.6"/>
+<line x1="48" y1="40" x2="50" y2="40" stroke="currentColor" stroke-width="1.2"/>
+<line x1="46" y1="46" x2="50" y2="46" stroke="currentColor" stroke-width="1.6"/>
+<line x1="48" y1="52" x2="50" y2="52" stroke="currentColor" stroke-width="1.2"/>
+<line x1="46" y1="58" x2="50" y2="58" stroke="currentColor" stroke-width="1.6"/>
+<!-- Horizontal measurement line touching head -->
+<line x1="22" y1="14" x2="50" y2="14" stroke="currentColor" stroke-width="1.4" stroke-dasharray="3,2"/>
+<!-- Child head (proportional) -->
+<circle cx="26" cy="20" r="6"/>
+<!-- Child body (well proportioned shoulders) -->
+<path d="M18 28 Q18 26 26 26 Q34 26 34 28 L33 38 L19 38 Z"/>
+<!-- Arms (natural hanging) -->
+<rect x="14" y="29" width="3.5" height="14" rx="1.5"/>
+<rect x="34" y="29" width="3.5" height="14" rx="1.5"/>
+<!-- Legs (long, properly proportioned) -->
+<rect x="20" y="38" width="5" height="22" rx="1.5"/>
+<rect x="27" y="38" width="5" height="22" rx="1.5"/>
+<!-- Feet -->
+<rect x="18" y="58" width="8" height="3" rx="1"/>
+<rect x="25" y="58" width="8" height="3" rx="1"/>
+</svg>
