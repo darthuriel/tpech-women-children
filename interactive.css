@@ -51,6 +51,9 @@ body.index-page .hero-title {
   line-height: 1.2;
   margin-bottom: 16px;
 }
+body.index-page .hero-title .heart-accent {
+  color: #c08884; /* Morandi rose — low-saturation peach pink */
+}
 
 body.index-page .hero-en {
   font-family: var(--font-latin);
@@ -97,6 +100,67 @@ body.index-page .hero-scrollhint span:first-child {
 @keyframes bounce {
   0%, 100% { transform: translateX(-50%) translateY(0); }
   50%      { transform: translateX(-50%) translateY(6px); }
+}
+
+/* ── Cover prelude (3 fade-in slides) ──────────────────────── */
+.cover-prelude {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background:
+    radial-gradient(ellipse at top, var(--sky-50) 0%, transparent 60%),
+    radial-gradient(ellipse at bottom, var(--sage-50) 0%, transparent 60%),
+    #fbfbf8;
+}
+.cover-prelude-slide {
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 24px;
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+.cover-prelude-slide.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+.cover-prelude-slide .slide-inner {
+  width: min(880px, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+.cover-prelude-slide .year {
+  font-family: var(--font-latin);
+  font-weight: 700;
+  font-size: clamp(54px, 12vw, 120px);
+  color: var(--sage-500);
+  letter-spacing: 0.04em;
+  line-height: 1;
+}
+.cover-prelude-slide:nth-child(2) .year { color: var(--sky-500); }
+.cover-prelude-slide:nth-child(3) .year { color: #b07a6d; }
+.cover-prelude-slide img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: left center;
+  border-radius: 14px;
+  box-shadow: 0 28px 70px rgba(30, 27, 24, 0.16);
+}
+.cover-prelude-slide .year-caption {
+  font-family: var(--font-display);
+  font-size: clamp(16px, 2.4vw, 22px);
+  color: var(--gray-700);
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+@media (max-width: 640px) {
+  .cover-prelude-slide { min-height: 86vh; padding: 40px 16px; }
+  .cover-prelude-slide img { aspect-ratio: 4 / 3; }
 }
 
 /* ── Timeline ────────────────────────────────────────────── */

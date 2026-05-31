@@ -226,6 +226,7 @@ main.handbook { display: flex; flex-direction: column; gap: var(--space-8); }
   width: 100%;
   height: auto;
   object-fit: cover;
+  object-position: left center;
   border-radius: var(--radius-md);
 }
 .page-cover .timeline-strip .year {
@@ -760,14 +761,114 @@ main.handbook { display: flex; flex-direction: column; gap: var(--space-8); }
   aspect-ratio: 4 / 3;
   width: 100%;
   object-fit: cover;
+  object-position: center;
   border-radius: var(--radius-md);
 }
+.three-features .item.anchor-bottom img { object-position: center bottom; }
+.three-features .item.anchor-top img    { object-position: center top; }
 .three-features .item .title {
   text-align: center;
   font-weight: 700;
   color: var(--sky-500);
   margin-top: var(--space-2);
   font-size: 15px;
+}
+
+/* ───── Tier funnel (ch09) ───── */
+.tier-funnel {
+  margin: var(--space-6) 0 var(--space-5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.tier-funnel .band {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-4);
+  align-items: center;
+  padding: var(--space-4) var(--space-5);
+  border-radius: var(--radius-md);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(30, 27, 24, 0.07);
+}
+.tier-funnel .band-1 { width: 100%; background: var(--sky); }
+.tier-funnel .band-2 { width: 78%;  background: var(--sky-500); }
+.tier-funnel .band-3 { width: 50%;  background: var(--ink); }
+.page-chapter-content.sage  .tier-funnel .band-1 { background: var(--sage); }
+.page-chapter-content.sage  .tier-funnel .band-2 { background: var(--sage-500); }
+.page-chapter-content.cream .tier-funnel .band-1 { background: var(--cream-400); }
+.page-chapter-content.cream .tier-funnel .band-2 { background: #b09853; }
+.tier-funnel .band .badge {
+  background: #fff;
+  color: var(--sky-500);
+  font-family: var(--font-latin);
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.page-chapter-content.sage  .tier-funnel .band .badge { color: var(--sage-500); }
+.page-chapter-content.cream .tier-funnel .band .badge { color: var(--cream-400); }
+.tier-funnel .band .text .title {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+.tier-funnel .band .text .desc {
+  font-size: 13px;
+  line-height: 1.65;
+  opacity: 0.95;
+}
+
+/* ───── Sisterhood block (ch12) ───── */
+.sisterhood {
+  margin-top: var(--space-7);
+  padding-top: var(--space-5);
+  border-top: 2px solid var(--cream-400);
+}
+.sisterhood .title-zh {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--cream-400);
+  margin-bottom: var(--space-1);
+}
+.sisterhood .subtitle-en {
+  font-family: var(--font-latin);
+  font-style: italic;
+  color: var(--gray-500);
+  font-size: 12.5px;
+  margin-bottom: var(--space-3);
+}
+.sisterhood .body {
+  font-size: 14.5px;
+  color: var(--ink);
+  line-height: 1.75;
+  margin-bottom: var(--space-4);
+}
+.sisterhood .chips {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-3);
+}
+.sisterhood .chip {
+  background: var(--cream-50);
+  padding: var(--space-4) var(--space-3);
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+.sisterhood .chip .title {
+  font-weight: 700;
+  color: var(--cream-400);
+  font-size: 14px;
+  margin-bottom: var(--space-2);
+}
+.sisterhood .chip .desc {
+  font-size: 12.5px;
+  color: var(--gray-700);
+  line-height: 1.6;
 }
 
 /* ───── Philosophy trio ───── */

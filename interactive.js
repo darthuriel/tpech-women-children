@@ -52,6 +52,24 @@
     n.addEventListener('touchend',   () => setTimeout(() => n.classList.remove('is-tap'), 150), { passive: true });
   });
 
+  // ── Cover prelude fade-in (IntersectionObserver) ──
+  const fades = document.querySelectorAll('[data-fade]');
+  if (fades.length && 'IntersectionObserver' in window) {
+    const fadeObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+          }
+        });
+      },
+      { threshold: 0.25, rootMargin: '0px 0px -10% 0px' }
+    );
+    fades.forEach((f) => fadeObserver.observe(f));
+  } else {
+    fades.forEach((f) => f.classList.add('in-view'));
+  }
+
   // ── Defer image loading hint (native lazy already handled by attr if present) ──
   // No-op placeholder for future enhancements.
 })();
