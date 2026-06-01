@@ -151,6 +151,13 @@ body.index-page .hero-scrollhint span:first-child {
   border-radius: 14px;
   box-shadow: 0 28px 70px rgba(30, 27, 24, 0.16);
 }
+.cover-prelude-slide.fit-contain img {
+  object-fit: contain;
+  object-position: center;
+  background: #fbfbf8;
+  aspect-ratio: 4 / 3;
+  max-width: 620px;
+}
 .cover-prelude-slide .year-caption {
   font-family: var(--font-display);
   font-size: clamp(16px, 2.4vw, 22px);

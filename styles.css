@@ -229,6 +229,11 @@ main.handbook { display: flex; flex-direction: column; gap: var(--space-8); }
   object-position: left center;
   border-radius: var(--radius-md);
 }
+.page-cover .timeline-strip .ms.fit-contain img {
+  object-fit: contain;
+  object-position: center;
+  background: var(--offwhite);
+}
 .page-cover .timeline-strip .year {
   font-family: var(--font-latin);
   font-weight: 700;
