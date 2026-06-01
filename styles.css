@@ -826,6 +826,29 @@ main.handbook { display: flex; flex-direction: column; gap: var(--space-8); }
   line-height: 1.65;
   opacity: 0.95;
 }
+/* Narrow viewports: bands go full-width and stack badge above text so
+   description doesn't get squeezed into a one-character column. */
+@media (max-width: 640px) {
+  .tier-funnel { gap: 14px; }
+  .tier-funnel .band-1,
+  .tier-funnel .band-2,
+  .tier-funnel .band-3 { width: 100%; }
+  .tier-funnel .band {
+    grid-template-columns: 1fr;
+    gap: 6px;
+    padding: 14px 16px;
+    border-left: 5px solid rgba(255, 255, 255, 0.6);
+  }
+  .tier-funnel .band-2 { border-left-width: 12px; }
+  .tier-funnel .band-3 { border-left-width: 20px; }
+  .tier-funnel .band .badge {
+    justify-self: start;
+    padding: 3px 11px;
+    font-size: 12.5px;
+  }
+  .tier-funnel .band .text .title { font-size: 15px; }
+  .tier-funnel .band .text .desc  { font-size: 13px; }
+}
 
 /* ───── Sisterhood block (ch12) ───── */
 .sisterhood {
@@ -1060,6 +1083,22 @@ main.handbook { display: flex; flex-direction: column; gap: var(--space-8); }
   font-size: 14px;
   color: var(--gray-700);
   line-height: 1.7;
+}
+/* Narrow viewports: collapse the level+title fixed columns to a single row
+   above the description so desc has the full width to breathe. */
+@media (max-width: 640px) {
+  .page-framework .layers .layer {
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "level title"
+      "desc  desc";
+    column-gap: var(--space-3);
+    row-gap: 6px;
+    padding: var(--space-4);
+  }
+  .page-framework .layers .level { grid-area: level; font-size: 15px; }
+  .page-framework .layers .title { grid-area: title; font-size: 17px; align-self: center; }
+  .page-framework .layers .desc  { grid-area: desc;  font-size: 13.5px; }
 }
 
 /* ───────────────────── Page: honors ───────────────────── */
