@@ -113,11 +113,11 @@ body.index-page .hero-scrollhint span:first-child {
     #fbfbf8;
 }
 .cover-prelude-slide {
-  min-height: 92vh;
+  min-height: 88vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 60px 24px;
+  padding: 48px 24px;
   opacity: 0;
   transform: translateY(28px);
   transition: opacity 1.2s ease-out, transform 1.2s ease-out;
@@ -146,10 +146,27 @@ body.index-page .hero-scrollhint span:first-child {
 .cover-prelude-slide img {
   width: 100%;
   aspect-ratio: 16 / 9;
+  max-height: 50vh;
   object-fit: cover;
   object-position: left center;
   border-radius: 14px;
   box-shadow: 0 28px 70px rgba(30, 27, 24, 0.16);
+}
+.cover-prelude-slide .year-body {
+  max-width: 620px;
+  margin: 4px auto 0;
+  font-size: 14.5px;
+  line-height: 1.75;
+  color: var(--gray-700);
+  text-align: justify;
+  letter-spacing: 0.02em;
+}
+@media (max-width: 640px) {
+  .cover-prelude-slide .year-body {
+    font-size: 13px;
+    line-height: 1.65;
+    text-align: left;
+  }
 }
 .cover-prelude-slide.fit-contain img {
   object-fit: contain;
