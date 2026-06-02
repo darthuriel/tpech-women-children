@@ -1151,8 +1151,16 @@ main.handbook { display: flex; flex-direction: column; gap: var(--space-8); }
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-5);
 }
+/* If the final card is alone in its row (e.g. 7 in a 3-col grid),
+   shift it into the centre column so the row reads as intentional. */
+.page-leadership .leaders > .leader:last-child:nth-child(3n + 1) {
+  grid-column: 2;
+}
 @media (max-width: 700px) {
   .page-leadership .leaders { grid-template-columns: repeat(2, 1fr); }
+  .page-leadership .leaders > .leader:last-child:nth-child(3n + 1) {
+    grid-column: auto;
+  }
 }
 .page-leadership .leader img {
   aspect-ratio: 3 / 4;
