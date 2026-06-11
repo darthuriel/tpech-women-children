@@ -1,5 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true">
-  <path d="M10 56V17c0-3.3 2.7-6 6-6h32c3.3 0 6 2.7 6 6v39H10Z"/>
-  <path fill="#fff" d="M28 17h8v9h9v8h-9v9h-8v-9h-9v-8h9v-9Zm-9 31h9v8h-9v-8Zm17 0h9v8h-9v-8Z"/>
-  <path d="M5 56h54v5H5z"/>
-</svg>
